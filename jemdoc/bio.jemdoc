@@ -1,0 +1,26 @@
+# jemdoc: menu{MENU}{biography.html}
+# jemdoc: addcss{./jemdoc.css}
+# jemdoc: title{Biography}
+# jemdoc: analytics{|}
+# jemdoc: nofooter
+
+~~~
+{}{img_left}{./image/LiYongfu.jpg}{Yongfu-Li}{170}{}{}
+= [http://yongfu-li.github.io Yongfu Li, Ph.D., SMIEEE]
+
+*E-mail:* liyongfu\[dot\]sg\[at\]gmail\[dot\]com; yongfu\[dot\]li\[at\]sjtu\[dot\]edu\[dot\]cn
+{{<a href="https://www.linkedin.com/in/yongfu-li/" target="<u>blank"><img
+src="image/logo-linkedin.jpg" height=24></a>
+<a href="https://github.com/yongfu-li" target="<u>blank">
+<img src="image/logo-github.jpg" height=25></a> 
+<a href="https://orcid.org/0000-0002-6322-8614" target="<u>blank">
+<img src="image/logo-orcid.png" height=25></a>
+}}
+~~~
+= Biography
+Yongfu Li (S'09–M'14-SM'18) received the B.Eng. and Ph.D. degrees from the Department of Electrical and Computing Engineering, National University of Singapore (NUS), Singapore. \n
+
+He is currently an Associate Professor with the Department of Micro and Nano Electronics Engineering and MoE Key Lab of Artificial Intelligence, Shanghai Jiao Tong University, China. He was a research engineer with NUS, from 2013 to 2014. He was a senior engineer (2014-2016), principal engineer (2016-2018) and member of technical staff (2018-2019) with GLOBALFOUNDRIES, as a Design-to-Manufacturing (DFM) Computer-Aided Design (CAD) research and development engineer. His research interests include analog/mixed signal circuits, data converters, power converters, bioemdical signal processing with deep learning technique and DFM circuit automation. \n
+
+Dr. Li received the Singapore Economic Development Board GLOBALFOUNDRIES Graduate Scholarship. He is actively contributing to the Singapore Section Young Professionals Affinity Group and has served as the Secretary during 2012–2013 and the Chair during 2014–2015.
+
