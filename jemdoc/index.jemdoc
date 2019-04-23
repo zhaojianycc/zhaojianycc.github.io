@@ -1,0 +1,16 @@
+# jemdoc: menu{MENU}{index.html}
+# jemdoc: addcss{./jemdoc.css}
+# jemdoc: title{Homepage}
+# jemdoc: addjs{"//cdn.clustrmaps.com/map_v2.js?u=esUb&d=TvxtKI_wYGA9Ve-FGGx5Ee5FWbxMZuXwXu_WYEt1QYo"}
+# jemdoc: analytics{|}
+# jemdoc: nofooter
+
+
+= Announcement
+~~~
+4th April 2019: First update \n
+11th April 2019: Second update \n
+17th April 2019: Third update
+~~~
+
+- {{<a href='./contest/contest.html'> Design Contest </a>}}
