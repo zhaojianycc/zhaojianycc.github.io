@@ -30,68 +30,46 @@ Basic Circuit Theory, Semiconductor Physics and Devices, Signal and Systems, Ana
 ~~~
 {}{table}{TABLENAME}
 Week | Lecture | Homework | Project ||
-1 | Introduction | - | - ||
-2 | Sample and Hold | HW \#1 (5\%) | Project \#1 (15\%) ||
-3 | Comparator | - | - ||
-4 | DAC Design | HW \#2 (5\%) | - ||
-5 | ADC Concept | - | Project \#2 (40\%) ||
-6 | Case Study | HW \#3 (5\%) | - ||
-7 | ADC Testing | - | - ||
-8 | Project \#2 - Review | Project \#2 - Review | - ||
-9 | Exam (25\%) | - | - 
+1 | Introduction | HW \#1 (10\%) | - ||
+2 | Process, Active & Passive Components | - | - ||
+3 | Process variation & Matching Issues | HW \#2 (15\%) | - ||
+4 | Parasitic Effects | - | Project \#1 (40%) ||
+5 | Noise & Shield | HW \#3 (15\%) | - ||
+6 | Failure Mechanism & DFM | - | - ||
+7 | Floor planning & Package | - | - ||
+8 | Layout of Amplifiers or Data Converters | - | - ||
 ~~~
 
 ==== Deadlines
 ~~~
 {}{table}{TABLENAME}
 Assignment | Submission ||
-Homework 1 | Monday of Week 5 ||
-Homework 2 | Monday of Week 7 ||
-Homework 3 | Monday of Week 8 ||
-Project 1 | Monday of Week 6 ||
-Project 2 | Monday of Week 9
+Homework 1 | May 7th ||
+Homework 2 | TBD. ||
+Homework 3 | TBD. ||
+Project | TBD. ||
 ~~~
 
 ==== Grading
-Homework & Discussion: 20%
+Assignment: 40%
 
-Project & Report: 55%
+Project & Report: 40%
 
-Exam: 25%
+Attendance & : 20%
 
 ==== Instructors
-Assoc. Prof. Yongfu Li Email: yongfu\[dot\]li\[at\]sjtu\[dot\]edu\[dot\]cn 
+Assis. Prof. Jian Zhao (赵健) Email: zhaojianycc\[at\]sjtu\[dot\]edu\[dot\]cn 
 
-Prof. Yong Lian Email: eleliany\[at\]sjtu\[dot\]edu\[dot\]cn
+Prof. Guoxing Wang (王国兴) Email: guoxing\[at\]sjtu\[dot\]edu\[dot\]cn
 
 ==== Teaching Assistant
-Yilun Jin Email: jinyilun\[at\]sjtu\[dot\]edu\[dot\]cn
+Jing Luo (罗京) Email: luojing\[at\]sjtu\[dot\]edu\[dot\]cn
 
 === Lectures (Click to download)
-- {{<a href='./mr317/intro.pdf'> Introduction </a>}}
-
-- {{<a href='./mr317/sample-and-hold.pdf'> Sample and Hold </a>}}
-
-- {{<a href='./mr317/comparator.pdf'> Comparator </a>}}
-
-- {{<a href='./mr317/dac.pdf'> DAC Design </a>}}
-
-- {{<a href='./mr317/adc-concept.pdf'> ADC Concept </a>}}
-
-- {{<a href='./mr317/adc-case-study.pdf'> ADC Case Study </a>}}
-
-- {{<a href='./mr317/adc-testing.pdf'> ADC Testing </a>}}
+- {{<a href='./mr413/MR413_Lec1&2.pdf'> Lecture #1 & #2  </a>}}
+- {{<a href='./mr413/MR413_Lab1.pdf'> Lab #1  </a>}}
 
 === Homework
-- {{<a href='./mr317/tutorial1.pdf'> Home work 1 </a>}}
-
-- {{<a href='./mr317/tutorial2.pdf'> Home work 2 </a>}}
-
-- {{<a href='./mr317/tutorial3.pdf'> Home work 3 </a>}}
+- {{<a href='./mr317/Assignment1.pdf'> Assignment #1 </a>}}
 
 === Project 
-- {{<a href='./mr317/project-1.pdf'> Project 1 </a>}}
-
-- {{<a href='./mr317/project-2.pdf'> Project 2 </a>}}
-
-- {{<a href='./mr317/project-2-presentation.pdf'> Project 2 Review </a>}}
