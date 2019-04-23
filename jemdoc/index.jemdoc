@@ -5,6 +5,9 @@
 # jemdoc: analytics{|}
 # jemdoc: nofooter
 
+~~~
+{}{img_left}{./image/word.png}{word}{750}{}{}
+~~~
 
 = Announcement
 ~~~
