@@ -1,21 +1,20 @@
 # jemdoc: addcss{../jemdoc.css}
-# jemdoc: title{SJTU MR317}
+# jemdoc: title{SJTU MR413}
 # jemdoc: analytics{|}
 # jemdoc: nofooter
 
-= MR317: Introduction to Mixed Signal Integrated Circuit Design
+= MR413: Layout Technology in Analog Integrated Circuit
 
 === Annoucement
 ~~~
-- 17/04: Week 9 - Exam @ Room 303 from 13:10 to 15:10
-- 06/04: Week 8 - Project \#2 progress report
+- 7th/May, Week 11 - Deadline of Assignment #1
 ~~~
 
 ==== Course Type
 This is an elective course in the area of integrated circuit design, providing foundation learning for computer engineering or electrical engineering.
 
 ==== Target Audiences
-Microelectronics science and engineering, electronic engineering, computer sciences, information engineering
+Microelectronics science and engineering, electronic engineering
 
 ==== Language of instruction
 English
