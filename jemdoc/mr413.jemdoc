@@ -32,11 +32,11 @@ Week | Lecture | Homework | Project ||
 1 | Introduction | HW \#1 (10\%) | - ||
 2 | Process, Active & Passive Components | - | - ||
 3 | Process variation & Matching Issues | HW \#2 (15\%) | - ||
-4 | Parasitic Effects | - | Project \#1 (40%) ||
-5 | Noise & Shield | HW \#3 (15\%) | - ||
-6 | Failure Mechanism & DFM | - | - ||
-7 | Floor planning & Package | - | - ||
-8 | Layout of Amplifiers or Data Converters | - | - 
+4 | Parasitic Effects, Noise & Shield | - | Project \#1 (40%) ||
+5 | Floor plan & Package | HW \#3 (15\%) | - ||
+6 | Design for Manufacture | - | - ||
+7 | Advanced EDA tools by Cadence | - | - ||
+8 | Project Review | - | - 
 ~~~
 
 ==== Deadlines
