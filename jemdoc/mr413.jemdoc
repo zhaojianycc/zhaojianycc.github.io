@@ -29,13 +29,13 @@ Basic Circuit Theory, Semiconductor Physics and Devices, Signal and Systems, Ana
 ~~~
 {}{table}{TABLENAME}
 Week | Lecture | Homework | Project ||
-1 | Introduction | HW \#1 (10\%) | - ||
-2 | Process, Active & Passive Components | - | - ||
-3 | Process variation & Matching Issues | HW \#2 (15\%) | - ||
-4 | Parasitic Effects, Noise & Shield | - | Project \#1 (40%) ||
-5 | Floor plan & Package | HW \#3 (15\%) | - ||
-6 | Design for Manufacture | - | - ||
-7 | Advanced EDA tools by Cadence | - | - ||
+1 | Lec#1:Introduction & Lec#2 Process:Active & Passive Components | HW \#1 (10\%) | - ||
+2 | Process variation & Matching Issues | - | - ||
+3 | Parasitic Effects | HW \#2 (15\%) | - ||
+4 | Floor plan & Package| - | Project \#1 (40%) ||
+5 | Design for Manufacture | HW \#3 (15\%) | - ||
+6 | Advanced EDA tools by Cadence | - | - ||
+7 | TBD. | - | - ||
 8 | Project Review | - | - 
 ~~~
 
@@ -66,9 +66,14 @@ Jing Luo (罗京) Email: luojing\[at\]sjtu\[dot\]edu\[dot\]cn
 === Lectures (Click to download)
 - {{<a href='./files/MR413_Lec1&2.pdf'> Lecture 1 & 2  </a>}}
 - {{<a href='./files/MR413_Lec3.pdf'> Lecture 3  </a>}}
+- {{<a href='./files/MR413_Lec4.pdf'> Lecture 4  </a>}}
+
+=== Lab Instructions (Click to download)
 - {{<a href='./files/MR413_Lab1.pdf'> Lab 1  </a>}}
+- {{<a href='./files/MR413_Lab2.pdf'> Lab 2  </a>}}
 
 === Homework
-- {{<a href='./files/Assignment1.pdf'> Assignment 1 </a>}}
+- {{<a href='./files/Homework1.pdf'> Homework 1 </a>}}
+- {{<a href='./files/Homework2.pdf'> Homework 2 </a>}}
 
 === Project 
