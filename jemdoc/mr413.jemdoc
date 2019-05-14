@@ -7,8 +7,9 @@
 
 === Annoucement
 ~~~
-- 7th/May, Week 11 - Deadline of Homework 1
+- 7th/May, Week 11 - Deadline of Homework 1 (Expired)
 - 21th/May, Week 13 - Deadline of Homework 2
+- 14th/June, Week 16 - Deadline of Final Project
 ~~~
 
 ==== Course Type
@@ -30,11 +31,11 @@ Basic Circuit Theory, Semiconductor Physics and Devices, Signal and Systems, Ana
 ~~~
 {}{table}{TABLENAME}
 Week | Lecture | Homework | Project ||
-1 | Introduction | HW \#1 (10\%) | - ||
-1 | Process, Active & Passive Components | - | - ||
+1-A | Introduction | HW \#1 (10\%) | - ||
+1-B | Process, Active & Passive Components | - | - ||
 2 | Process Variation & Matching Issues | - | - ||
 3 | Parasitic Effects | HW \#2 (15\%) | - ||
-4 | Floor plan & Package| - | Project \#1 (40%) ||
+4 | ESD Protection, Floorplan & Packaging| - | Project \#1 (40%) ||
 5 | Design for Manufacture | HW \#3 (15\%) | - ||
 6 | Advanced EDA tools by Cadence | - | - ||
 7 | TBD. | - | - ||
@@ -45,10 +46,10 @@ Week | Lecture | Homework | Project ||
 ~~~
 {}{table}{TABLENAME}
 Assignment | Submission ||
-Homework 1 | May 7th ||
-Homework 2 | May. 21th ||
+Homework 1 | 7th/May ||
+Homework 2 | 21th/May ||
 Homework 3 | TBD. ||
-Project | TBD. 
+Project | 14th/June 
 ~~~
 
 
@@ -69,6 +70,7 @@ Jing Luo (罗京) Email: luojing\[at\]sjtu\[dot\]edu\[dot\]cn
 - {{<a href='./files/MR413_Lec1&2.pdf'> Lecture 1 & 2  </a>}}
 - {{<a href='./files/MR413_Lec3.pdf'> Lecture 3  </a>}}
 - {{<a href='./files/MR413_Lec4.pdf'> Lecture 4  </a>}}
+- {{<a href='./files/MR413_Lec5.pdf'> Lecture 5  </a>}}
 
 === Lab Instructions (Click to download)
 - {{<a href='./files/MR413_Lab1.pdf'> Lab 1  </a>}}
@@ -80,3 +82,4 @@ Jing Luo (罗京) Email: luojing\[at\]sjtu\[dot\]edu\[dot\]cn
 - {{<a href='./files/Homework2.pdf'> Homework 2 </a>}}
 
 === Project 
+- {{<a href='./files/Final_project.pdf'> Final Project </a>}}
