@@ -5,10 +5,10 @@
 # jemdoc: nofooter
 
 ~~~
-{}{img_left}{./image/LiYongfu.jpg}{Yongfu-Li}{170}{}{}
-= [http://yongfu-li.github.io Yongfu Li, Ph.D., SMIEEE]
+{}{img_left}{./image/JianZhao.jpg}{Zhao Jian}{170}{}{}
+= [https://zhaojianycc.github.io/ Jian Zhao, Ph.D.]
 
-*E-mail:* liyongfu\[dot\]sg\[at\]gmail\[dot\]com; yongfu\[dot\]li\[at\]sjtu\[dot\]edu\[dot\]cn
+*E-mail:* zhaojianycc@sjtu.edu.cn
 {{<a href="https://www.linkedin.com/in/yongfu-li/" target="<u>blank"><img
 src="image/logo-linkedin.jpg" height=24></a>
 <a href="https://github.com/yongfu-li" target="<u>blank">
@@ -18,9 +18,6 @@ src="image/logo-linkedin.jpg" height=24></a>
 }}
 ~~~
 = Biography
-Yongfu Li (S'09–M'14-SM'18) received the B.Eng. and Ph.D. degrees from the Department of Electrical and Computing Engineering, National University of Singapore (NUS), Singapore. \n
+Yongfu Li (S'14–M'17) received the B.S. degree and Ph.D degree from Nanjing University of Science and Technology, Nanjing, China, in 2011 and 2017. \n
 
-He is currently an Associate Professor with the Department of Micro and Nano Electronics Engineering and MoE Key Lab of Artificial Intelligence, Shanghai Jiao Tong University, China. He was a research engineer with NUS, from 2013 to 2014. He was a senior engineer (2014-2016), principal engineer (2016-2018) and member of technical staff (2018-2019) with GLOBALFOUNDRIES, as a Design-to-Manufacturing (DFM) Computer-Aided Design (CAD) research and development engineer. His research interests include analog/mixed signal circuits, data converters, power converters, bioemdical signal processing with deep learning technique and DFM circuit automation. \n
-
-Dr. Li received the Singapore Economic Development Board GLOBALFOUNDRIES Graduate Scholarship. He is actively contributing to the Singapore Section Young Professionals Affinity Group and has served as the Secretary during 2012–2013 and the Chair during 2014–2015.
-
+He is currently an Assistant Professor with the Department of Micro and Nano Electronics Engineering, Shanghai Jiao Tong University, China. From 2012 to 2015, he was a visiting scholar in the VLSI and Signal Processing Lab, National University of Singapore (NUS), where he was involved in the design of CMOS readout circuits for silicon oscillating accelerometers and MEMS gyroscopes. From 2017 to 2019, he was served as a post doctor under the Department of Electronic Engineering, Tsinghua University. His research interests include integrated circuits for MEMS/Biomedical sensors and wireless body area networks. \n
