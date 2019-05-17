@@ -1,0 +1,8 @@
+# jemdoc: menu{MENU}{eit.html}
+# jemdoc: addcss{./jemdoc.css}
+# jemdoc: title{EIT}
+# jemdoc: analytics{|}
+# jemdoc: nofooter
+
+= Electrical Impedance Tomography
+

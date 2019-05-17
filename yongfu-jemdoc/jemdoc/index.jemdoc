@@ -1,0 +1,35 @@
+# jemdoc: menu{MENU}{index.html}
+# jemdoc: addcss{./jemdoc.css}
+# jemdoc: title{Homepage}
+# jemdoc: addjs{"//cdn.clustrmaps.com/map_v2.js?u=esUb&d=TvxtKI_wYGA9Ve-FGGx5Ee5FWbxMZuXwXu_WYEt1QYo"}
+# jemdoc: analytics{|}
+# jemdoc: nofooter
+
+
+~~~
+{}{img_left}{./image/word.png}{word}{750}{}{}
+~~~
+
+# == About
+
+#*[yongfu-li.github.io/cv/resume.pdf Resume]*
+#*[yongfu-li.github.io/cv/cv.pdf CV]*
+
+#*[https://scholar.google.com/citations?user=155hQCcAAAAJ&hl=en My Citations (from Google Scholar)]*
+
+== Contact
+- E-mail: liyongfu\[dot\]sg\[at\]gmail\[dot\]com,yongfu\[dot\]li\[at\]sjtu\[dot\]edu\[dot\]cn
+#- Phone: +65 6670 0437 (Office)
+
+# ==== Recent News 
+== Recent News
+- 05/2019: We are looking for >5 直硕 and 2-3 直博 students for Analog/Mixed-Signal/Digital Circuit Design, Embedded Design, EDA Circuit Automation and Signal Processing.
+- 04/2019: Being invited to join ASP-DAC as Technical Program Committee
+- 03/2019: Congratulations to Zhou Fei for receiving Best Poster Award in Semicon
+- 03/2019: Congratulations to Aaron for his paper being accepted in Electronics Journal
+- 02/2019: Being invited to join NEWCAS as Review Committee Member of "Biomedical circuits and systems" Track
+- 02/2019: Joined MoE Key Lab of Artifical Intelligence, China, as a PI.
+- 01/2019: Joined Shanghai Jiao Tong University as an Associate Professor in the department of micro and nano electronics
+
+
+

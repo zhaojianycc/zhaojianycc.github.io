@@ -1,0 +1,13 @@
+# jemdoc: menu{MENU}{conferences.html}
+# jemdoc: addcss{./jemdoc.css}
+# jemdoc: title{Conferences}
+# jemdoc: analytics{|}
+# jemdoc: nofooter
+
+
+= Conference Deadlines
+~~~
+{}{raw}
+<p><iframe
+src="http://www.confsearch.org/faces/pages/staticresults.jsp?query=dac%20iccad%20date%20aspdac%20ispd%20fpga%20icml%20nips%20ijcai%20aaai%20iccv%20cvpr%20&sortMode=1&graphicView=1"height="700" width="900" name="confsearch_frame" frameborder="0" allowfullscreen="allowfullscreen"> </iframe></p>
+~~~

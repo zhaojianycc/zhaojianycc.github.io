@@ -1,0 +1,21 @@
+# jemdoc: menu{MENU}{academic.html}
+# jemdoc: addcss{./jemdoc.css}
+# jemdoc: title{Academic}
+# jemdoc: analytics{|}
+# jemdoc: nofooter
+
+= Teaching
+
+== National University of Singapore
+- Tutor – EE 2020E:Digital Fundamentals (B.Eng), January – May 2013 \n
+I served as a tutor for this undergraduate level course under the Bachelor of Technology programme.
+
+- Graduate Teaching Assistant – EE 2020E:Digital Fundamentals (B.Tech), January – May 2012 \n
+I served as a Graduate Assistant for this undergraduate level course under the Bachelor of Technology programme. This course is similar to EE2020 but it is catered to the part-time undergraduate students.
+
+- Graduate Teaching Assistant – EE 2020:Digital Fundamentals (B.Eng), August 2011 – December 2012 \n
+I thrice served as a Graduate Assistant for this undergraduate level course under the Bachelor of Engineering programme. This course replaces the EE2006: Digital Design and the new emphasis is on students’ understanding to design, simulate and realize building blocks of the modem digital systems using 74’s series TTL discrete components and hardware description languages.
+
+- Graduate Teaching Assistant – EE 2006:Digital Design (B.Eng), August 2010 – May 2011 \n
+I twice served as a Graduate Assistant for this undergraduate level course under the Bachelor of Engineering programme. This is a course that introduces fundamental digital logic, digital circuits, and programmable devices. This course provides students with an understanding of the building blocks of modern digital systems and methods of designing, simulating and realizing such systems. This course also emphasize on understanding the fundamentals of digital design across different levels of abstraction using hardware description languages.
+
