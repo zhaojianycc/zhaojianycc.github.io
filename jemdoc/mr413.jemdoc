@@ -37,14 +37,14 @@ Basic Circuit Theory, Semiconductor Physics and Devices, Signal and Systems, Ana
 ~~~
 {}{table}{TABLENAME}
 Week | Lecture | Homework | Project ||
-1-A | Introduction | HW \#1 (10\%) | - ||
-1-B | Process, Active & Passive Components | - | - ||
-2 | Process Variation & Matching Issues | - | - ||
-3 | Parasitic Effects | HW \#2 (15\%) | - ||
-4 | ESD Protection, Floorplan & Packaging| - | Project \#1 (40%) ||
-5 | Design for Manufacture (Li Yongfu) | HW \#3 (15\%) | - ||
-6 | Case Study: Design Flow of a Mixed Signal IC | - | - ||
-7 | TBD. | - | - ||
+1-A | 1. Introduction | HW \#1 (10\%) | - ||
+1-B | 2. Process, Active & Passive Components | - | - ||
+2 | 3. Process Variation & Matching Issues | - | - ||
+3 | 4. Parasitic Effects | HW \#2 (15\%) | - ||
+4 | 5. ESD Protection, Floorplan & Packaging| - | Project \#1 (40%) ||
+5 | 6. Design for Manufacture (Li Yongfu) | HW \#3 (15\%) | - ||
+6 | 7. Case Study: Design Flow of a Mixed Signal IC | - | - ||
+7 | 8. TBD. | - | - ||
 8 | Project Review | - | - 
 ~~~
 
