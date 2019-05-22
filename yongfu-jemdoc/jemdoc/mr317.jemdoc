@@ -1,0 +1,97 @@
+# jemdoc: addcss{../jemdoc.css}
+# jemdoc: title{SJTU MR317}
+# jemdoc: analytics{|}
+# jemdoc: nofooter
+
+= MR317: Introduction to Mixed Signal Integrated Circuit Design
+
+=== Annoucement
+~~~
+- 17/04: Week 9 - Exam @ Room 303 from 13:10 to 15:10
+- 06/04: Week 8 - Project \#2 progress report
+~~~
+
+==== Course Type
+This is an elective course in the area of integrated circuit design, providing foundation learning for computer engineering or electrical engineering.
+
+==== Target Audiences
+Microelectronics science and engineering, electronic engineering, computer sciences, information engineering
+
+==== Language of instruction
+English
+
+==== School
+Department of Micro/Nano Electronics
+
+==== Pre-requisite
+Basic Circuit Theory, Semiconductor Physics and Devices, Signal and Systems, Analog Integrated Circuits Design
+
+==== Time Table
+~~~
+{}{table}{TABLENAME}
+Week | Lecture | Homework | Project ||
+1 | Introduction | - | - ||
+2 | Sample and Hold | HW \#1 (5\%) | Project \#1 (15\%) ||
+3 | Comparator | - | - ||
+4 | DAC Design | HW \#2 (5\%) | - ||
+5 | ADC Concept | - | Project \#2 (40\%) ||
+6 | Case Study | HW \#3 (5\%) | - ||
+7 | ADC Testing | - | - ||
+8 | Project \#2 - Review | Project \#2 - Review | - ||
+9 | Exam (25\%) | - | - 
+~~~
+
+==== Deadlines
+~~~
+{}{table}{TABLENAME}
+Assignment | Submission ||
+Homework 1 | Monday of Week 5 ||
+Homework 2 | Monday of Week 7 ||
+Homework 3 | Monday of Week 8 ||
+Project 1 | Monday of Week 6 ||
+Project 2 | Monday of Week 9
+~~~
+
+==== Grading
+Homework & Discussion: 20%
+
+Project & Report: 55%
+
+Exam: 25%
+
+==== Instructors
+Assoc. Prof. Yongfu Li Email: yongfu\[dot\]li\[at\]sjtu\[dot\]edu\[dot\]cn 
+
+Prof. Yong Lian Email: eleliany\[at\]sjtu\[dot\]edu\[dot\]cn
+
+==== Teaching Assistant
+Yilun Jin Email: jinyilun\[at\]sjtu\[dot\]edu\[dot\]cn
+
+=== Lectures (Click to download)
+- {{<a href='./mr317/intro.pdf'> Introduction </a>}}
+
+- {{<a href='./mr317/sample-and-hold.pdf'> Sample and Hold </a>}}
+
+- {{<a href='./mr317/comparator.pdf'> Comparator </a>}}
+
+- {{<a href='./mr317/dac.pdf'> DAC Design </a>}}
+
+- {{<a href='./mr317/adc-concept.pdf'> ADC Concept </a>}}
+
+- {{<a href='./mr317/adc-case-study.pdf'> ADC Case Study </a>}}
+
+- {{<a href='./mr317/adc-testing.pdf'> ADC Testing </a>}}
+
+=== Homework
+- {{<a href='./mr317/tutorial1.pdf'> Home work 1 </a>}}
+
+- {{<a href='./mr317/tutorial2.pdf'> Home work 2 </a>}}
+
+- {{<a href='./mr317/tutorial3.pdf'> Home work 3 </a>}}
+
+=== Project 
+- {{<a href='./mr317/project-1.pdf'> Project 1 </a>}}
+
+- {{<a href='./mr317/project-2.pdf'> Project 2 </a>}}
+
+- {{<a href='./mr317/project-2-presentation.pdf'> Project 2 Review </a>}}

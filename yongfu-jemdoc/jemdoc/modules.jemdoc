@@ -1,0 +1,9 @@
+# jemdoc: menu{MENU}{modules.html}
+# jemdoc: addcss{./jemdoc.css}
+# jemdoc: title{News}
+# jemdoc: analytics{|}
+# jemdoc: nofooter
+
+= Modules
+- {{<a href='./module/mr317.html'> MR317: Introduction To Mixed-Signal Integrated Circuit Design </a>}}
+
