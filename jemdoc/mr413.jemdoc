@@ -41,8 +41,8 @@ Week | Lecture | Homework | Project ||
 2 | Process Variation & Matching Issues | - | - ||
 3 | Parasitic Effects | HW \#2 (15\%) | - ||
 4 | ESD Protection, Floorplan & Packaging| - | Project \#1 (40%) ||
-5 | Design for Manufacture | HW \#3 (15\%) | - ||
-6 | Advanced EDA tools by Cadence | - | - ||
+5 | Design for Manufacture (Li Yongfu) | HW \#3 (15\%) | - ||
+6 | Case Study: Design Flow of a Mixed Signal IC | - | - ||
 7 | TBD. | - | - ||
 8 | Project Review | - | - 
 ~~~
@@ -53,7 +53,7 @@ Week | Lecture | Homework | Project ||
 Assignment | Submission ||
 Homework 1 | 7th/May ||
 Homework 2 | 21th/May ||
-Homework 3 | TBD. ||
+Homework 3 | 4th/June ||
 Project | 14th/June 
 ~~~
 
@@ -80,11 +80,13 @@ Jing Luo (罗京) Email: luojing\[at\]sjtu\[dot\]edu\[dot\]cn
 === Lab Instructions (Click to download)
 - {{<a href='./files/MR413_Lab1.pdf'> Lab 1  </a>}}
 - {{<a href='./files/MR413_Lab2.pdf'> Lab 2  </a>}}
+- {{<a href='./files/MR413_Lab3.pdf'> Lab 3  </a>}}
 
-=== Homework
+=== Homework (Click to download)
 - {{<a href='./files/Homework1.pdf'> Homework 1 </a>}}
 - {{<a href='./files/Homework1_Interpret.pdf'> Homework 1 Interpret </a>}}
 - {{<a href='./files/Homework2.pdf'> Homework 2 </a>}}
+- {{<a href='./files/Homework3.pdf'> Homework 3 </a>}}
 
-=== Project 
+=== Project (Click to download)
 - {{<a href='./files/Final_project.pdf'> Final Project </a>}}
