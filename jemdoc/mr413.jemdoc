@@ -26,9 +26,9 @@ Chinese/English
 Department of Micro/Nano Electronics
 
 ==== Site & Time
-Room #202, Department of Micro/Nano Electronics
-Lecture: 14:00~15:00, Tuesday \\
-Lab: 15:00~17:40. Tuesday \& 14:00~17:40, Friday
+Room \#202, Department of Micro/Nano Electronics
+Lecture: 14:00~15:00, Tuesday \n
+Lab: Tuesday 15:00~17:40 \& Friday 14:00~17:40
 
 ==== Pre-requisite
 Basic Circuit Theory, Semiconductor Physics and Devices, Signal and Systems, Analog Integrated Circuits Design
@@ -41,22 +41,22 @@ Week | Lecture | Homework | Project ||
 1-B | 2. Process, Active & Passive Components | - | - ||
 2 | 3. Process Variation & Matching Issues | - | - ||
 3 | 4. Parasitic Effects | HW \#2 (15\%) | - ||
-4 | 5. ESD Protection, Floorplan & Packaging| - | Project \#1 (40%) ||
+4 | 5. ESD Protection, Floorplan & Packaging| - | Project #1 (40%) ||
 5 | 6. Design for Manufacture (Li Yongfu) | HW \#3 (15\%) | - ||
 6 | 7. Case Study: Design Flow of a Mixed Signal IC | - | - ||
 7 | 8. TBD. | - | - ||
 8 | Project Review | - | - 
-~~~
+~~~ \n
 
 ==== Deadlines
 ~~~
 {}{table}{TABLENAME}
 Assignment | Submission ||
-Homework 1 | 7th/May ||
-Homework 2 | 21th/May ||
-Homework 3 | 4th/June ||
-Project | 14th/June 
-~~~
+Homework 1 | 7th May ||
+Homework 2 | 21th May ||
+Homework 3 | 4th June ||
+Project | 14th June 
+~~~ \n
 
 ==== Grading
 Assignment: 40\% \n
@@ -64,17 +64,18 @@ Project & Report: 40\% \n
 Attendance & Discussion: 20\%
 
 ==== Instructors
-Assis. Prof. Jian Zhao (赵健) Email: zhaojianycc\[at\]sjtu\[dot\]edu\[dot\]cn\n 
-Prof. Guoxing Wang (王国兴) Email: guoxing\[at\]sjtu\[dot\]edu\[dot\]cn
+Assis. Prof. Jian Zhao (赵健) Email: zhaojianycc@sjtu.edu.cn\n 
+Prof. Guoxing Wang (王国兴) Email: guoxing@sjtu.edu.cn
 
 ==== Teaching Assistant
-Jing Luo (罗京) Email: luojing\[at\]sjtu\[dot\]edu\[dot\]cn
+Jing Luo (罗京) Email: luojing@sjtu.edu.cn
 
 === Lectures (Click to download)
 - {{<a href='./files/MR413_Lec1&2.pdf'> Lecture 1 & 2  </a>}}
 - {{<a href='./files/MR413_Lec3.pdf'> Lecture 3  </a>}}
 - {{<a href='./files/MR413_Lec4.pdf'> Lecture 4  </a>}}
 - {{<a href='./files/MR413_Lec5.pdf'> Lecture 5  </a>}}
+- {{<a href='./files/MR413_Lec7.pdf'> Lecture 7  </a>}}
 
 === Lab Instructions (Click to download)
 - {{<a href='./files/MR413_Lab1.pdf'> Lab 1  </a>}}
