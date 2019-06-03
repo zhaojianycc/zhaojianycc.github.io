@@ -10,6 +10,7 @@ python2.7 ./jemdoc.py2 -o ../ services.jemdoc
 python2.7 ./jemdoc.py2 -o ../ people.jemdoc
 python2.7 ./jemdoc.py2 -o ../ recruitment.jemdoc
 python2.7 ./jemdoc.py2 -o ../ topics.jemdoc
+python2.7 ./jemdoc.py2 -o ../ contact.jemdoc
 
 cd ..
 git add *
