@@ -8,7 +8,7 @@ python2.7 ../ref/bibconvert.py --suffix web --highlight "ZHAO Jian" --highlight 
 python2.7 ./jemdoc.py2  -o ../ publications.jemdoc
 python2.7 ./jemdoc.py2 -o ../ services.jemdoc
 python2.7 ./jemdoc.py2 -o ../ people.jemdoc
-python2.7 ./jemdoc.py2 -o ../ recuitment.jemdoc
+python2.7 ./jemdoc.py2 -o ../ recruitment.jemdoc
 
 cd ..
 git add *
