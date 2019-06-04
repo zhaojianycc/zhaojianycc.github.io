@@ -34,6 +34,7 @@ Lab: Tuesday 15:00 \~ 17:40 \& Friday 14:00 \~ 17:40
 Basic Circuit Theory, Semiconductor Physics and Devices, Signal and Systems, Analog Integrated Circuits Design
 
 === Time Table
+~~~
 {}{table}{TABLENAME}
 Week | Lecture | Homework | Project ||
 1-A | 1. Introduction | HW \#1 (10\%) | - ||
@@ -45,14 +46,17 @@ Week | Lecture | Homework | Project ||
 6 | 7. Case Study: Design Flow of a Mixed Signal IC | - | - ||
 7 | 8. Discussion | - | - ||
 8 | Project Review | - | - 
+~~~
 
 === Deadlines
+~~~
 {}{table}{TABLENAME}
 Assignment | Submission ||
 Homework 1 | 7th May ||
 Homework 2 | 21th May ||
 Homework 3 | 4th June ||
 Project | 14th June 
+~~~
 
 === Grading
 Assignment: 40\% \n
