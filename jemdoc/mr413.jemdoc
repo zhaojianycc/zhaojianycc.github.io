@@ -9,7 +9,7 @@
 ~~~
 - 7th/May, Week 11 - Deadline of Homework 1 (Expired)
 - 21th/May, Week 13 - Deadline of Homework 2 (Expired)
-- 4th/June, Week 15 - Deadline of Homework 3
+- 4th/June, Week 15 - Deadline of Homework 3 (Expired)
 - 14th/June, Week 16 - Deadline of Final Project
 ~~~
 
@@ -27,8 +27,8 @@ Department of Micro/Nano Electronics
 
 ==== Site & Time
 Room \#202, Department of Micro/Nano Electronics \n
-Lecture: 14:00~15:00, Tuesday \n
-Lab: Tuesday 15:00~17:40 \& Friday 14:00~17:40
+Lecture: 14:00 \~ 15:00, Tuesday \n
+Lab: Tuesday 15:00 \~ 17:40 \& Friday 14:00 \~ 17:40
 
 ==== Pre-requisite
 Basic Circuit Theory, Semiconductor Physics and Devices, Signal and Systems, Analog Integrated Circuits Design
@@ -41,7 +41,7 @@ Week | Lecture | Homework | Project ||
 1-B | 2. Process, Active & Passive Components | - | - ||
 2 | 3. Process Variation & Matching Issues | - | - ||
 3 | 4. Parasitic Effects | HW \#2 (15\%) | - ||
-4 | 5. ESD Protection, Floor-plan & Packaging| - | Project \#1 (40%) ||
+4 | 5. ESD Protection, Floor-plan \& Packaging| - | Project \#1 (40%) ||
 5 | 6. Design for Manufacture (Li Yongfu) | HW \#3 (15\%) | - ||
 6 | 7. Case Study: Design Flow of a Mixed Signal IC | - | - ||
 7 | 8. TBD. | - | - ||
