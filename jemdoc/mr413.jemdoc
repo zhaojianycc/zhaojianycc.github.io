@@ -1,5 +1,5 @@
 # jemdoc: menu{MENU}{mr413.html}
-# jemdoc: addcss{../jemdoc.css}
+# jemdoc: addcss{./jemdoc.css}
 # jemdoc: title{SJTU MR413}
 # jemdoc: analytics{|}
 # jemdoc: nofooter
