@@ -4,10 +4,10 @@
 # jemdoc: analytics{|}
 # jemdoc: nofooter
 
-#= Students
-#I am very fortunate to work with various faculty members to supervise/co-supervise students on interesting projects.
+= Students
+I am very fortunate to work with various faculty members to supervise/co-supervise students on interesting projects.
 
-== Current Research Members
+= Current Research Members
 === Data&Power Link in Body-area Networks (BAN)
 {{<font color="crimson">14.</font>}} Kong Zhen, B.Eng. SJTU, 2020
 {{<font color="crimson">13.</font>}} He Tao, M.Eng SJTU, 2018 (Co-supervised with Prof. Li Yongfu)
