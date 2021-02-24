@@ -1,0 +1,14 @@
+# jemdoc: menu{MENU}{mr413.html}
+# jemdoc: addcss{./jemdoc.css}
+# jemdoc: title{SJTU MR413}
+# jemdoc: analytics{|}
+# jemdoc: nofooter
+
+=== Undergraduate
+
+EE105: Fundamentals of Electronic Circuits - 3 credits (电子电路基础 - 3 学分)
+MR413: Design Course of Analog Integrated Circuits - 2 credits (模拟集成电路课程设计 - 2 学分)
+
+=== Graduate
+
+EST8704: Advanced Data Converters - 2 credits (先进数据转换器 - 2 学分)
