@@ -10,9 +10,6 @@ A Wireless Wearable fNIRS Devices developed by BiCASL in Shanghai Jiao Tong Univ
 ~~~
 {}{img_left}{./image/Opensources/n4000device.gif}{word}{250}{}{}
 ~~~
-~~~
-{}{img_left}{./image/Opensources/n4000image.gif}{word}{250}{}{}
-~~~
 
 === Specifications
 - No. of Light Sources: 4
@@ -30,6 +27,9 @@ A Wireless Wearable fNIRS Devices developed by BiCASL in Shanghai Jiao Tong Univ
 
 === Data Format
 - *.snirf
+~~~
+{}{img_left}{./image/Opensources/n4000image.gif}{word}{250}{}{}
+~~~
 
 === How to rent?
 - Join "N4000 Partnership Program"
