@@ -6,5 +6,36 @@
 
 = Wearable fNIRS Systems enabling Hyper-Scanning: N-4000
 === Introduction 
-TBD.
+A Wireless Wearable fNIRS Devices developed by BiCASL in Shanghai Jiao Tong University now open for trail application.
+~~~
+{}{img_left}{./image/Opensources/n4000device.gif}{word}{250}{}{}
+~~~
+{}{img_left}{./image/Opensources/n4000image.gif}{word}{250}{}{}
+~~~
 
+=== Specifications
+- No. of Light Sources: 4
+- No. of Light Receivers: 12
+- S&D Separations: 2.6cm, 4.1cm
+- Wavelength of Light Sources: 690nm/835nm
+- Weight: 250g
+- Battery Life: 2h
+- Connectivity: WiFi
+
+=== Layout of Optrodes
+~~~
+{}{img_left}{./image/Opensources/SDseparation.png}{word}{250}{}{}
+~~~
+
+=== Data Format
+- *.snirf
+
+=== How to rent?
+- Join "N4000 Partnership Program"
+- Provide research plan
+- Apply for a Free Trial
+- Provide feedbacks
+
+=== Contacts
+- Zisheng Dai (daizisheng@sjtu.edu.cn)
+- Cheng Chen  (chencheng_sjtu@sjtu.edu.cn)
