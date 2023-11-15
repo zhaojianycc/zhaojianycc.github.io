@@ -1,0 +1,10 @@
+# jemdoc: menu{MENU}{memspn.html}
+# jemdoc: addcss{./jemdoc.css}
+# jemdoc: title{memspn}
+# jemdoc: analytics{|}
+# jemdoc: nofooter
+
+= Fast Evaluation Model for Phase Noise in MEMS Sensors: MEMS-PN
+=== Introduction 
+TBD.
+

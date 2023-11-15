@@ -1,0 +1,30 @@
+# jemdoc: menu{MENU}{rtesim.html}
+# jemdoc: addcss{./jemdoc.css}
+# jemdoc: title{rtesim}
+# jemdoc: analytics{|}
+# jemdoc: nofooter
+
+= Biological Tissue Optical Transmission Model: RTE-Sim
+=== Introduction 
+Compact model for light propagation simulation in fNIRS systems. We offer both Matlab and Verilog-A version.
+
+=== Background
+RTE-Sim is an open-source compact model designed for light propagation simulation in functional near-infrared spectroscopy (fNIRS) systems. The goals for this compact model are:
+
+The model offers a more efficient alternative to traditional numerical methods like the Finite Element Method (FEM) or Monte Carlo (MC) simulation for modeling light propagation in tissues.
+
+The model is compatible with mainstream circuit design tools, making it valuable for achieving comprehensive simulations of the fNIRS system's signal chain.
+
+~~~
+{}{img_left}{./image/Opensources/rtesim.png}{word}{750}{}{}
+~~~
+
+=== Where to download
+https://github.com/posvirus/RTE-Sim/
+
+=== Please cite our Papers
+Wenyao Chen, Jian Zhao. "An RTE-Based Compact Model for Light Propagation Simulation in fNIRS Systems", IEEE BioCAS 2023, pp. 1-4.
+
+=== Contributor
+Wenyao Chen
+
