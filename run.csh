@@ -12,6 +12,9 @@ python2.7 ./jemdoc.py2 -o ../ people.jemdoc
 python2.7 ./jemdoc.py2 -o ../ recruitment.jemdoc
 python2.7 ./jemdoc.py2 -o ../ topics.jemdoc
 python2.7 ./jemdoc.py2 -o ../ contact.jemdoc
+python2.7 ./jemdoc.py2 -o ../ rtesim.jemdoc
+python2.7 ./jemdoc.py2 -o ../ memspn.jemdoc
+python2.7 ./jemdoc.py2 -o ../ n4000.jemdoc
 
 cd ..
 git add *
