@@ -4,14 +4,13 @@
 # jemdoc: analytics{|}
 # jemdoc: nofooter
 
-= Topics
+= Topics: Sensing Tomorrow, Connecting Today
 
-=== Data&Power Link in Body-area Networks (BAN)
-~~~
-{}{img_left}{./image/ResearchTopics/Topic1_WBAN.png}{word}{1000}{}{}
-~~~
+== Application Specific Sensory Interface Circuits
+=== ASIC for MEMS Inertial Sensors
+=== ASIC for Optical Brain-Computer Interfaces
 
-=== Near-infrared Non-invasive Brain-Computer Interface (NI-BCI)
-~~~
-{}{img_left}{./image/ResearchTopics/Topic2_NIBCI.png}{word}{1000}{}{}
-~~~
+== Emerging Technologies on Analog Integrated Circuits
+=== Flexible Thin-Film Integrated Circuits
+=== Body-Channel Transceivers on CMOS
+=== Artificial Spiking Neural Networks on CMOS
