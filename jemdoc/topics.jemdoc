@@ -14,7 +14,9 @@ Brief Introduction: Coming Soon.
 ~~~
 
 - ASIC for Optical Brain-Computer Interfaces
-Brief Introduction: Coming Soon.
+
+Brief Introduction: How to guide smart UAVs in hash environment (without GPS)? Micro-Inertial-Sensing Systems is the key. The major challenge is to eliminate the low-frequency errors including 1/f noise, and unpredictable drifts through advanced circuit design technologies.
+
 ~~~
 {}{img_left}{./image/ChipGallery/ChipFDNIRS.png}{word}{}{200}{}
 ~~~
