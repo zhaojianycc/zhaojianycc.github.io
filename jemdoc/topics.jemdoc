@@ -17,7 +17,7 @@
 
 === ASIC for Optical Brain-Computer Interfaces
 
-- Light time of flight is a promising representation of brain activities due to its noninvasive and high-spatial resolution nature. The main challenge in circuit design is to break through the trade-off between power consumption (supporting a large number of channels) and ToF resolution (providing precise measurement).
+- Light time of flight (ToF) is a promising representation of brain activities due to its noninvasive and high-spatial resolution nature. The main challenge in circuit design is to break through the trade-off between power consumption (supporting a large number of channels) and ToF resolution (providing precise measurement).
 
 ~~~
 {}{img_left}{./image/ChipGallery/ChipFDNIRS.png}{word}{}{200}{}
@@ -26,7 +26,7 @@
 == Emerging Technologies on Analog Integrated Circuits
 === Flexible Thin-Film Integrated Circuits
 
-- Benefiting from large-area and low-cost fabrication, flexible integrated circuits based on thin-film transistors (TFTs) enable ubiquitous IoT applications. However, designing effective circuits using emerging devices is fraught with challenges, ranging from EDA tools to high-robustness circuit architecture.
+- Benefiting from large-area and low-cost fabrication, flexible integrated circuits based on thin-film transistors (TFTs) enable ubiquitous Human-Machine Interaction (HMI) and Internet of Things (IoT) applications. However, designing effective circuits using emerging devices is fraught with challenges, ranging from EDA tools to high-robustness circuits.
 
 ~~~
 {}{img_left}{./image/ChipGallery/ChipFLEX.png}{word}{}{200}{}
@@ -34,7 +34,7 @@
 
 === Body-Channel Transceivers on CMOS
 
-- The human body is traditionally considered a barrier to RF transmission. However, recent studies suggest that it may function as a 'bridge' for signals in quasi-static fields. Body-channel communication has demonstrated an order-of-magnitude higher efficiency compared to its BLE and UWB counterparts. The main challenge for circuit designers is how to leverage this efficiency in the unstable and unpredictable body channel.
+- The human body is traditionally considered a barrier to Radio-Frequency (RF) transmission. However, recent studies suggest that it may function as a 'bridge' for signals in quasi-static fields. Body-channel communication has demonstrated an order-of-magnitude higher efficiency compared to its BLE and UWB counterparts. The main challenge for circuit designers is how to leverage this efficiency in the unstable and unpredictable body channel characteristics.
 
 ~~~
 {}{img_left}{./image/ChipGallery/ChipBCC.png}{word}{}{200}{}
@@ -42,7 +42,7 @@
 
 === Artificial Spiking Neural Networks on CMOS
 
-- Silicon processors have supported the entire information world; however, their energy efficiency has plateaued with the end of Moore's Law, making it difficult to improve. On the other hand, the human brain is the most energy-efficient processor in the world. The question of how to achieve high-efficiency signal processing similar to the human brain using silicon transistors, which are entirely different from neurons, is a fascinating and challenging topic.
+- Silicon processors have supported the entire information world. However, their energy efficiency has plateaued with the end of Moore's Law, making it difficult to improve. On the other hand, the human brain is the most energy-efficient processor in the world. The question of how to achieve high-efficiency signal processing similar to the human brain using silicon transistors, which are entirely different from neurons, is a fascinating and challenging topic.
 
 ~~~
 {}{img_left}{./image/ChipGallery/ChipSNN.png}{word}{}{200}{}
