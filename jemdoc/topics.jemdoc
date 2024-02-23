@@ -17,12 +17,12 @@
 
 === ASIC for Optical Brain-Computer Interfaces
 
-- Light time of flight (ToF) is a promising representation of brain activities due to its noninvasive and high-spatial resolution nature. The main challenge in circuit design is to break through the trade-off between power consumption (supporting a large number of channels) and ToF resolution (providing precise measurement).
+- Light time of flight (ToF) is a promising representation of brain activities due to its noninvasive and high-spatial resolution nature. The main challenge in circuit design is to break through the trade-off between power consumption (supporting a large number of channels) and ToF resolution (providing precise measurement). For DEMO video, please visit: [https://b23.tv/29pD5Cb Bilibili Website]
 
 ~~~
 {}{img_left}{./image/ChipGallery/ChipFDNIRS.png}{word}{}{200}{}
 ~~~
-For DEMO video, please visit: [https://b23.tv/29pD5Cb Bilibili Website] \n
+
 
 == Emerging Technologies on Analog Integrated Circuits
 === Flexible Thin-Film Integrated Circuits
