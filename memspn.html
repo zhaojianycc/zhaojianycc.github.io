@@ -67,45 +67,34 @@
 <p>On the left hand side, you can set the parameters of the system and carry out system stability analysis, calibration with reduced-order model transient simulation and phase noise extraction analysis.</p>
 <p>On the right hand side, you can visualize the system structure and see the description of the parameters.</p>
 <p>Mechanical parameters are responsible for describing the mechanical performance of the MEMS resonant.</p>
-<p>|   Parameter   |     Units      |                 Description                    |
-| :&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;&ndash;: | :&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;: | :&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;&ndash;: |
-|    &lsquo;Q_d&lsquo;      |               |         Quality factor                         |
-|    &lsquo;m_d&lsquo;      |      kg        |         Resonator equivalent mass              |
-|    &lsquo;Omega_d&lsquo;  |      rad<i>s     |         Intrinsic frequency                    |
-|    &lsquo;k_d&lsquo;      |               |   Zero-order stiffness (=m_d<b>Omega_d^2)        |
-|    &lsquo;c_d&lsquo;      |               |   Damping coefficient  (=m_d</b>Omega_d</i>Q_d)      |
-|    &lsquo;k2&lsquo;       |               |   2nd-order stiffness (typical value = 1e11)   |</p>
+<table class="imgtable"><tr><td>
+<img src="./image/Opensources/PNtable1.png" alt="word" width="750px" />&nbsp;</td>
+<td align="left"></td></tr></table>
 <p>Electric parameters are responsible for describing the specific details of each module.</p>
-<p>|   Parameter   |     Units      |                 Description                    |
-| :&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;&ndash;: | :&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;: | :&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;&ndash;: |
-|    &lsquo;K_bd&lsquo;     |      V         |         Drive bias voltage                     |
-|    &lsquo;K_bs&lsquo;     |      V         |         Sense bias voltage                     |
-|    &lsquo;K_amp&lsquo;    |               |         Transimpedance gain                    |
-|    &lsquo;K_ref&lsquo;    |               |         Reference Voltage                      |
-|    &lsquo;K_cd&lsquo;     |      F<i>m       |         dC</i>dx-drive                            |
-|    &lsquo;K_cs&lsquo;     |      F<i>m       |         dC</i>dx-sense                            |
-|    &lsquo;Km&lsquo;       |     m<i>s</i>N      |  Mechanical gain, from drive force to velocity |
-|    &lsquo;Wc&lsquo;       |               |         Reduced-order System pole              |
-|    &lsquo;K_gm&lsquo;     |               |  Transconductance of Active Loop Filter        |
-|    &lsquo;K_mul&lsquo;    |               |         Gain of the VGA                        |
-|    &lsquo;V_dd&lsquo;     |      V         |         Supply Voltage                         |</p>
+<table class="imgtable"><tr><td>
+<img src="./image/Opensources/PNtable2.png" alt="word" width="750px" />&nbsp;</td>
+<td align="left"></td></tr></table>
 <p>&ldquo;Equivalent Input Noise&rdquo; corresponds to 6 different noise sources, supports flicker noise and white noise mixing inputs.</p>
-<p>|   Parameter   |     Units      |                Description                     |
-| :&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;&ndash;: | :&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;: | :&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;&#8201;&mdash;&#8201;&ndash;: |
-|     &lsquo;N1&lsquo;      |  N<i>sqrt(Hz)    |     Mechanical Input Random Force              |
-|     &lsquo;N2&lsquo;      |  A</i>sqrt(Hz)    |     Input-referred Current Noise of TIA        |
-|     &lsquo;N3&lsquo;      |  V<i>sqrt(Hz)    |     Output Voltage Noise of PGA                |
-|     &lsquo;N4&lsquo;      |  V</i>sqrt(Hz)    | Output Voltage Noise of Rectifier &amp; Subtractor |
-|     &lsquo;N5&lsquo;      |  V<i>sqrt(Hz)    |     Quantization Gain Noise                    |
-|     &lsquo;N6&lsquo;      |  V</i>sqrt(Hz)    |     Reference Voltage Noise                    |</p>
+<table class="imgtable"><tr><td>
+<img src="./image/Opensources/PNtable3.png" alt="word" width="750px" />&nbsp;</td>
+<td align="left"></td></tr></table>
 <p>The process of running the application is shown below.</p>
-<p>1. Complete input of system parameters
-2. Run “stability analysis” and “trans. calibration”
-3. Check if the system can stabilise oscillations based on the results
-4. If the system fails to stabilise in step 3, revert back to step 1
-5. Complete input of noise source parameters
-6. Run “PN noise”
-7. Use &ldquo;PN/FN&rdquo; button to switch between phase and frequency noise</p>
+<ul>
+<li><p>1. Complete input of system parameters</p>
+</li>
+<li><p>2. Run “stability analysis” and “trans. calibration”</p>
+</li>
+<li><p>3. Check if the system can stabilise oscillations based on the results</p>
+</li>
+<li><p>4. If the system fails to stabilise in step 3, revert back to step 1</p>
+</li>
+<li><p>5. Complete input of noise source parameters</p>
+</li>
+<li><p>6. Run “PN noise”</p>
+</li>
+<li><p>7. Use &ldquo;PN/FN&rdquo; button to switch between phase and frequency noise</p>
+</li>
+</ul>
 <p>In the stability analysis, the application will give the zero-pole analysis of the system and the specific values of the RC filter.</p>
 <p>The application supports interconversion between phase and frequency noise, and can query the frequency noise as well as calculate the total in-band noise.</p>
 <table class="imgtable"><tr><td>

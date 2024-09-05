@@ -40,51 +40,31 @@ On the right hand side, you can visualize the system structure and see the descr
 
 Mechanical parameters are responsible for describing the mechanical performance of the MEMS resonant.
 
-|   Parameter   |     Units      |                 Description                    |
-| :-----------: | :------------: | :--------------------------------------------: |
-|    `Q_d`      |      \         |         Quality factor                         |
-|    `m_d`      |      kg        |         Resonator equivalent mass              |
-|    `Omega_d`  |      rad/s     |         Intrinsic frequency                    |
-|    `k_d`      |      \         |   Zero-order stiffness (=m_d*Omega_d^2)        |
-|    `c_d`      |      \         |   Damping coefficient  (=m_d*Omega_d/Q_d)      |
-|    `k2`       |      \         |   2nd-order stiffness (typical value = 1e11)   |
+~~~
+{}{img_left}{./image/Opensources/PNtable1.png}{word}{750}{}{}
+~~~
 
 Electric parameters are responsible for describing the specific details of each module.
 
-|   Parameter   |     Units      |                 Description                    |
-| :-----------: | :------------: | :--------------------------------------------: |
-|    `K_bd`     |      V         |         Drive bias voltage                     |
-|    `K_bs`     |      V         |         Sense bias voltage                     |
-|    `K_amp`    |      \         |         Transimpedance gain                    |
-|    `K_ref`    |      \         |         Reference Voltage                      |
-|    `K_cd`     |      F/m       |         dC/dx-drive                            |
-|    `K_cs`     |      F/m       |         dC/dx-sense                            |
-|    `Km`       |     m/s/N      |  Mechanical gain, from drive force to velocity |
-|    `Wc`       |      \         |         Reduced-order System pole              |
-|    `K_gm`     |      \         |  Transconductance of Active Loop Filter        |
-|    `K_mul`    |      \         |         Gain of the VGA                        |
-|    `V_dd`     |      V         |         Supply Voltage                         |
+~~~
+{}{img_left}{./image/Opensources/PNtable2.png}{word}{750}{}{}
+~~~
 
 "Equivalent Input Noise" corresponds to 6 different noise sources, supports flicker noise and white noise mixing inputs.
 
-|   Parameter   |     Units      |                Description                     |
-| :-----------: | :------------: | :--------------------------------------------: |
-|     `N1`      |  N/sqrt(Hz)    |     Mechanical Input Random Force              |
-|     `N2`      |  A/sqrt(Hz)    |     Input-referred Current Noise of TIA        |
-|     `N3`      |  V/sqrt(Hz)    |     Output Voltage Noise of PGA                |
-|     `N4`      |  V/sqrt(Hz)    | Output Voltage Noise of Rectifier & Subtractor |
-|     `N5`      |  V/sqrt(Hz)    |     Quantization Gain Noise                    |
-|     `N6`      |  V/sqrt(Hz)    |     Reference Voltage Noise                    |
+~~~
+{}{img_left}{./image/Opensources/PNtable3.png}{word}{750}{}{}
+~~~
 
 The process of running the application is shown below.
 
-1. Complete input of system parameters
-2. Run “stability analysis” and “trans. calibration”
-3. Check if the system can stabilise oscillations based on the results
-4. If the system fails to stabilise in step 3, revert back to step 1
-5. Complete input of noise source parameters
-6. Run “PN noise”
-7. Use "PN/FN" button to switch between phase and frequency noise
+- 1. Complete input of system parameters
+- 2. Run “stability analysis” and “trans. calibration”
+- 3. Check if the system can stabilise oscillations based on the results
+- 4. If the system fails to stabilise in step 3, revert back to step 1
+- 5. Complete input of noise source parameters
+- 6. Run “PN noise”
+- 7. Use "PN/FN" button to switch between phase and frequency noise
 
 In the stability analysis, the application will give the zero-pole analysis of the system and the specific values of the RC filter.
 
