@@ -5,6 +5,100 @@
 # jemdoc: nofooter
 
 = Fast Evaluation Model for Phase Noise in MEMS Sensors: MEMS-PN
-=== Introduction 
-TBD.
+=== MEMS-PN 
+Phase noise and frequency noise extraction and analysis tool for MEMS systems.
 
+=== Background 
+MEMS-PN is an application designed to extract and analyse phase and frequency noise in MEMS systems. The goals for this application are:
+
+- The application offers a more efficient alternative to traditional transient simulations with Simulink model for extracting the phase noise of the MEMS system.
+- The parameters in the model used for this application can be adjusted to accommodate different circuit.
+
+The application contains the MEMS system architecture shown below. It consists of 4 modules, namely MEMS resonator, TIA, active loop filter and PGA. The system includes 6 noise source inputs and 3 signal source outputs.
+
+~~~
+{}{img_left}{./image/Opensources/System.png}{word}{750}{}{}
+~~~
+
+=== Installation 
+The MATLAB application needs your version of MATLAB higher than 2021b.
+
+Please ensure that you have installed [https://ww2.mathworks.cn/products/simulink.html Bilibili SIMULINK] before running the application.
+
+Get the latest release of MEMS-PN [https://github.com/refuliar/MEMS-PN/releases/tag/matlabapp MATLABapp].
+
+=== Usage
+Once you have installed and run the application, you can see the following interface.
+
+~~~
+{}{img_left}{./image/Opensources/main.png}{word}{750}{}{}
+~~~
+
+On the left hand side, you can set the parameters of the system and carry out system stability analysis, calibration with reduced-order model transient simulation and phase noise extraction analysis.
+
+On the right hand side, you can visualize the system structure and see the description of the parameters.
+
+Mechanical parameters are responsible for describing the mechanical performance of the MEMS resonant.
+
+|   Parameter   |     Units      |                 Description                    |
+| :-----------: | :------------: | :--------------------------------------------: |
+|    `Q_d`      |      \         |         Quality factor                         |
+|    `m_d`      |      kg        |         Resonator equivalent mass              |
+|    `Omega_d`  |      rad/s     |         Intrinsic frequency                    |
+|    `k_d`      |      \         |   Zero-order stiffness (=m_d*Omega_d^2)        |
+|    `c_d`      |      \         |   Damping coefficient  (=m_d*Omega_d/Q_d)      |
+|    `k2`       |      \         |   2nd-order stiffness (typical value = 1e11)   |
+
+Electric parameters are responsible for describing the specific details of each module.
+
+|   Parameter   |     Units      |                 Description                    |
+| :-----------: | :------------: | :--------------------------------------------: |
+|    `K_bd`     |      V         |         Drive bias voltage                     |
+|    `K_bs`     |      V         |         Sense bias voltage                     |
+|    `K_amp`    |      \         |         Transimpedance gain                    |
+|    `K_ref`    |      \         |         Reference Voltage                      |
+|    `K_cd`     |      F/m       |         dC/dx-drive                            |
+|    `K_cs`     |      F/m       |         dC/dx-sense                            |
+|    `Km`       |     m/s/N      |  Mechanical gain, from drive force to velocity |
+|    `Wc`       |      \         |         Reduced-order System pole              |
+|    `K_gm`     |      \         |  Transconductance of Active Loop Filter        |
+|    `K_mul`    |      \         |         Gain of the VGA                        |
+|    `V_dd`     |      V         |         Supply Voltage                         |
+
+"Equivalent Input Noise" corresponds to 6 different noise sources, supports flicker noise and white noise mixing inputs.
+
+|   Parameter   |     Units      |                Description                     |
+| :-----------: | :------------: | :--------------------------------------------: |
+|     `N1`      |  N/sqrt(Hz)    |     Mechanical Input Random Force              |
+|     `N2`      |  A/sqrt(Hz)    |     Input-referred Current Noise of TIA        |
+|     `N3`      |  V/sqrt(Hz)    |     Output Voltage Noise of PGA                |
+|     `N4`      |  V/sqrt(Hz)    | Output Voltage Noise of Rectifier & Subtractor |
+|     `N5`      |  V/sqrt(Hz)    |     Quantization Gain Noise                    |
+|     `N6`      |  V/sqrt(Hz)    |     Reference Voltage Noise                    |
+
+The process of running the application is shown below.
+
+1. Complete input of system parameters
+2. Run “stability analysis” and “trans. calibration”
+3. Check if the system can stabilise oscillations based on the results
+4. If the system fails to stabilise in step 3, revert back to step 1
+5. Complete input of noise source parameters
+6. Run “PN noise”
+7. Use "PN/FN" button to switch between phase and frequency noise
+
+In the stability analysis, the application will give the zero-pole analysis of the system and the specific values of the RC filter.
+
+The application supports interconversion between phase and frequency noise, and can query the frequency noise as well as calculate the total in-band noise.
+
+~~~
+{}{img_left}{./image/Opensources/process.gif}{word}{750}{}{}
+~~~
+
+=== Contributors
+- Zhihang Zhang, Shanghai Jiao Tong University
+- Benhao Huang, Shanghai Jiao Tong Unversity
+- Jian Zhao, Shanghai Jiao Tong University
+
+=== Cite our Papers
+- Zhao Jian , Zhao Yang , Wang Xi , Xia Guoming , Qiu Anping , Su Yan and Xu Yong Ping, "A system decomposition model for phase noise in silicon oscillating accelerometers", IEEE Sensors Journal, pp. 5259–5269, 2016.
+- Zhao Jian , Xu Yong Ping and Su Yan, “A System-decomposition Model for MEMS Silicon Oscillating Accelerometer”, River Publishers, pp. 133, 2019.
