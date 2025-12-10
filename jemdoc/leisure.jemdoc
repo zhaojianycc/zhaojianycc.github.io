@@ -1,0 +1,26 @@
+# jemdoc: menu{MENU}{leisure.html}
+# jemdoc: addcss{./jemdoc.css}
+# jemdoc: title{Leisure}
+# jemdoc: analytics{|}
+# jemdoc: nofooter
+
+= Topics: Enjoy every day in our group.
+
+=== 2023 Shanghai Happy Valley team-building day
+
+~~~
+{}{img_left}{./image/leisure/Happyvalley01.png}{word}{}{200}{}
+~~~
+
+=== 2024 Gongqing Forest Park team-building day
+
+~~~
+{}{img_left}{./image/ChipGallery/Gongqing01.png}{word}{}{200}{}
+~~~
+
+=== 2025 Shanghai Legoland team-building day
+
+~~~
+{}{img_left}{./image/ChipGallery/Legoland01.png}{word}{}{200}{}
+~~~
+

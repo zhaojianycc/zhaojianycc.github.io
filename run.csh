@@ -15,6 +15,7 @@ python2.7 ./jemdoc.py2 -o ../ contact.jemdoc
 python2.7 ./jemdoc.py2 -o ../ rtesim.jemdoc
 python2.7 ./jemdoc.py2 -o ../ memspn.jemdoc
 python2.7 ./jemdoc.py2 -o ../ n4000.jemdoc
+python2.7 ./jemdoc.py2 -o ../ leisure.jemdoc
 
 cd ..
 git add *
