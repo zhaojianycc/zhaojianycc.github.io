@@ -73,3 +73,11 @@
 - 页面导航指向有效 HTML 文件。
 - 新图片大小适合网页使用。
 - `git status` 中没有日志、交换文件、压缩包或设计源文件。
+
+## 恢复点
+
+现代化改版前的静态网站记录在提交 `862a900`，并带有标签 `pre-redesign-20260910`。需要查看或恢复时，可从该标签创建分支：
+
+```powershell
+git switch -c restore-pre-redesign pre-redesign-20260910
+```
