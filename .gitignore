@@ -1,0 +1,11 @@
+# Editor and operating-system files
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Logs and local preview artifacts
+*.log
+__pycache__/
+*.pyc

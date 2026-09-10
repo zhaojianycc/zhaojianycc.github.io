@@ -2,10 +2,8 @@
   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<link rel="stylesheet" href="jemdoc.css" type="text/css" />
-<link rel="stylesheet" href="./jemdoc.css" type="text/css" />
+<link rel="stylesheet" href="assets/css/site.css" type="text/css" />
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110735310-1"></script>
 <script>
@@ -54,7 +52,7 @@
 </ul>
 <p>The application contains the MEMS system architecture shown below. It consists of 4 modules, namely MEMS resonator, TIA, active loop filter and PGA. The system includes 6 noise source inputs and 3 signal source outputs.</p>
 <table class="imgtable"><tr><td>
-<img src="./image/Opensources/System.png" alt="word" width="750px" />&nbsp;</td>
+<img src="assets/images/opensources/System.png" alt="word" width="750px" />&nbsp;</td>
 <td align="left"></td></tr></table>
 <h3>Installation </h3>
 <p>The MATLAB application needs your version of MATLAB higher than 2021b.</p>
@@ -63,21 +61,21 @@
 <h3>Usage</h3>
 <p>Once you have installed and run the application, you can see the following interface.</p>
 <table class="imgtable"><tr><td>
-<img src="./image/Opensources/main.png" alt="word" width="750px" />&nbsp;</td>
+<img src="assets/images/opensources/main.png" alt="word" width="750px" />&nbsp;</td>
 <td align="left"></td></tr></table>
 <p>On the left hand side, you can set the parameters of the system and carry out system stability analysis, calibration with reduced-order model transient simulation and phase noise extraction analysis.</p>
 <p>On the right hand side, you can visualize the system structure and see the description of the parameters.</p>
 <p>Mechanical parameters are responsible for describing the mechanical performance of the MEMS resonant.</p>
 <table class="imgtable"><tr><td>
-<img src="./image/Opensources/PNtable1.png" alt="word" width="750px" />&nbsp;</td>
+<img src="assets/images/opensources/PNtable1.png" alt="word" width="750px" />&nbsp;</td>
 <td align="left"></td></tr></table>
 <p>Electric parameters are responsible for describing the specific details of each module.</p>
 <table class="imgtable"><tr><td>
-<img src="./image/Opensources/PNtable2.png" alt="word" width="750px" />&nbsp;</td>
+<img src="assets/images/opensources/PNtable2.png" alt="word" width="750px" />&nbsp;</td>
 <td align="left"></td></tr></table>
 <p>&ldquo;Equivalent Input Noise&rdquo; corresponds to 6 different noise sources, supports flicker noise and white noise mixing inputs.</p>
 <table class="imgtable"><tr><td>
-<img src="./image/Opensources/PNtable3.png" alt="word" width="750px" />&nbsp;</td>
+<img src="assets/images/opensources/PNtable3.png" alt="word" width="750px" />&nbsp;</td>
 <td align="left"></td></tr></table>
 <p>The process of running the application is shown below.</p>
 <ul>
@@ -99,7 +97,7 @@
 <p>In the stability analysis, the application will give the zero-pole analysis of the system and the specific values of the RC filter.</p>
 <p>The application supports interconversion between phase and frequency noise, and can query the frequency noise as well as calculate the total in-band noise.</p>
 <table class="imgtable"><tr><td>
-<img src="./image/Opensources/process.gif" alt="word" width="750px" />&nbsp;</td>
+<img src="assets/images/opensources/process.gif" alt="word" width="750px" />&nbsp;</td>
 <td align="left"></td></tr></table>
 <h3>Contributors</h3>
 <ul>
