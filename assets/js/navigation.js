@@ -7,7 +7,8 @@
     { label: "Group", links: [["bio.html", "Principal Investigator"], ["people.html", "People"], ["news.html", "News"], ["leisure.html", "Group Life"]] },
     { label: "Research", links: [["topics.html", "Research Topics"], ["publications.html", "Publications"]] },
     { label: "Teaching & Service", links: [["teaching.html", "Teaching"], ["services.html", "Academic Service"]] },
-    { label: "Resources", links: [["rtesim.html", "RTE-Sim"], ["memspn.html", "MEMS-PN"], ["n4000.html", "BCI N4000"]] }
+    { label: "Resources", links: [["rtesim.html", "RTE-Sim"], ["memspn.html", "MEMS-PN"], ["n4000.html", "BCI N4000"]] },
+    { label: "Management", links: [["student-board/", "Student Tasks"]] }
   ];
 
   function link(href, label, className) {
