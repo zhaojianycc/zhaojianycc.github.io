@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>课题组学生任务看板</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="shell">
+    <header><span class="mark">研管</span><div><h1>学生任务看板</h1><p>仅显示最近一次已发布的会后任务</p></div></header>
+    <section id="unlock" class="panel unlock">
+      <h2>输入访问密码</h2>
+      <p>密码由课题组通过内部渠道另行通知。密码不会发送到服务器。</p>
+      <form id="unlockForm"><input id="password" type="password" autocomplete="current-password" placeholder="访问密码" required /><button type="submit">查看任务</button></form>
+      <p id="message" class="message" role="alert"></p>
+    </section>
+    <section id="board" hidden><div class="board-head"><div><h2>最新任务</h2><p id="updatedAt"></p></div><button id="lock" class="secondary">锁定</button></div><div id="groups"></div></section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
