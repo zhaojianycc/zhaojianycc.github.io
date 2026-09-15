@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>SOA 样机物料看板</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="shell">
+    <header><span class="mark">SOA</span><div><h1>样机物料看板</h1><p>物料、库存、样机与齐套状态</p></div></header>
+    <section id="unlock" class="panel unlock">
+      <h2>输入访问密码</h2>
+      <p>密码与学生任务看板一致。密码仅用于浏览器本地解密，不会发送到服务器。</p>
+      <form id="unlockForm"><input id="password" type="password" autocomplete="current-password" placeholder="访问密码" required /><button type="submit">查看看板</button></form>
+      <p id="message" class="message" role="alert"></p>
+    </section>
+    <section id="board" hidden>
+      <div class="board-head"><div><h2>SOA Dashboard</h2><p id="updatedAt"></p></div><button id="lock" class="secondary">锁定</button></div>
+      <iframe id="viewer" title="SOA 样机物料看板"></iframe>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
