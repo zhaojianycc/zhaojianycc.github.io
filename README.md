@@ -1,6 +1,6 @@
-# BiCASL 实验室网站
+# Jian Zhao Research Group 网站
 
-赵健教授课题组（BiCASL, SJTU）的 GitHub Pages 静态网站。
+赵健教授课题组（Jian Zhao Research Group, SJTU）的 GitHub Pages 静态网站。
 
 - 线上地址：<https://zhaojianycc.github.io>
 - 发布分支：`master`
@@ -43,16 +43,24 @@
 
 ## 维护方法
 
-1. 修改对应的 HTML 文件。所有页面的左侧导航都各自保存一份；导航变化时应同步修改所有页面。
-2. 图片放入 `assets/images/` 的对应子目录。
-3. 在本地启动静态服务器预览：
+1. 每次开始维护前，先在仓库根目录同步其他项目的更新：
+
+   ```powershell
+   git pull --rebase
+   ```
+
+   仓库内有子目录由其他 agent project 维护，不得覆盖或删除与当前任务无关的变更。遇到 rebase 冲突时，应先解决冲突再继续修改。
+
+2. 修改对应的 HTML 文件。所有页面的左侧导航都各自保存一份；导航变化时应同步修改所有页面。
+3. 图片放入 `assets/images/` 的对应子目录。
+4. 在本地启动静态服务器预览：
 
    ```powershell
    python -m http.server 8000
    ```
 
-4. 浏览 `http://localhost:8000/`，确认页面、图片和链接正常。
-5. 提交并推送：
+5. 浏览 `http://localhost:8000/`，确认页面、图片和链接正常。
+6. 提交并推送：
 
    ```powershell
    git add -A
