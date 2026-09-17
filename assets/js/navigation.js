@@ -8,7 +8,7 @@
     { label: "Research", links: [["topics.html", "Research Topics"], ["publications.html", "Publications"]] },
     { label: "Teaching & Service", links: [["teaching.html", "Teaching"], ["services.html", "Academic Service"]] },
     { label: "Resources", links: [["rtesim.html", "RTE-Sim"], ["memspn.html", "MEMS-PN"], ["n4000.html", "BCI N4000"]] },
-    { label: "Management", links: [["student-board/", "Student Tasks"], ["lab-rules/", "LabRules"], ["SOA-dashboard/", "SOA Dashboard"]] }
+    { label: "Management", links: [["student-board/", "Student Tasks"], ["lab-rules/", "LabRules"], ["equipment-board/", "Lab Equipment"], ["SOA-dashboard/", "SOA Dashboard"]] }
   ];
 
   function link(href, label, className) {
