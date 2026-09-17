@@ -40,9 +40,43 @@
     toggle.setAttribute("aria-expanded", String(open));
   });
 
-  menu.addEventListener("click", function (event) {
-    if (!event.target.closest("details")) {
-      menu.querySelectorAll("details[open]").forEach(function (item) { item.removeAttribute("open"); });
+  var desktopPointer = window.matchMedia("(min-width: 901px) and (hover: hover) and (pointer: fine)");
+  var details = Array.prototype.slice.call(menu.querySelectorAll(".nav-group"));
+
+  function closeMenus(except) {
+    details.forEach(function (item) {
+      if (item !== except) item.removeAttribute("open");
+    });
+  }
+
+  details.forEach(function (item) {
+    var closeTimer;
+
+    item.addEventListener("toggle", function () {
+      if (item.open) closeMenus(item);
+    });
+
+    item.addEventListener("mouseenter", function () {
+      window.clearTimeout(closeTimer);
+    });
+
+    item.addEventListener("mouseleave", function () {
+      if (!desktopPointer.matches) return;
+      closeTimer = window.setTimeout(function () {
+        item.removeAttribute("open");
+      }, 120);
+    });
+  });
+
+  document.addEventListener("click", function (event) {
+    if (!event.target.closest("#site-navigation .nav-group")) closeMenus();
+  });
+
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+      closeMenus();
+      nav.classList.remove("open");
+      toggle.setAttribute("aria-expanded", "false");
     }
   });
 }());
