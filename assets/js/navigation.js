@@ -51,13 +51,24 @@
 
   details.forEach(function (item) {
     var closeTimer;
+    var summary = item.querySelector("summary");
 
     item.addEventListener("toggle", function () {
       if (item.open) closeMenus(item);
     });
 
+    summary.addEventListener("click", function (event) {
+      if (!desktopPointer.matches) return;
+      event.preventDefault();
+      closeMenus(item);
+      item.setAttribute("open", "");
+    });
+
     item.addEventListener("mouseenter", function () {
       window.clearTimeout(closeTimer);
+      if (!desktopPointer.matches) return;
+      closeMenus(item);
+      item.setAttribute("open", "");
     });
 
     item.addEventListener("mouseleave", function () {
