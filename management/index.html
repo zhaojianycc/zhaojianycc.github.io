@@ -16,7 +16,7 @@
 
     <section id="unlock" class="panel unlock">
       <h2>输入访问密码</h2>
-      <p>一次解锁即可查看学生任务、学生信息、实验室制度、设备和 SOA 看板。密码仅在当前浏览器内存中用于本地解密，不会发送或保存。</p>
+      <p>一次解锁即可查看学生任务、学生信息、实验室制度和设备。密码仅在当前浏览器内存中用于本地解密，不会发送或保存。</p>
       <form id="unlockForm"><input id="password" type="password" autocomplete="current-password" placeholder="访问密码" required /><button type="submit">解锁管理中心</button></form>
       <p id="message" class="message" role="alert"></p>
     </section>
@@ -28,7 +28,6 @@
         <button type="button" data-panel="student-info">Student Info</button>
         <button type="button" data-panel="lab-rules">Lab Rules</button>
         <button type="button" data-panel="equipment">Lab Equipment</button>
-        <button type="button" data-panel="soa-dashboard">SOA Dashboard</button>
       </nav>
       <p id="loadNotice" class="load-notice" hidden></p>
 
@@ -36,7 +35,6 @@
       <section id="student-info" class="module" hidden><div class="module-title"><h2>Student Info</h2><p id="infoUpdatedAt"></p></div><div class="panel table-wrap"><table><thead><tr><th>学生姓名</th><th>学生邮箱</th><th>公共服务</th><th>工位</th><th>参与项目</th></tr></thead><tbody id="studentRows"></tbody></table></div></section>
       <section id="lab-rules" class="module" hidden><div class="module-title"><h2>Lab Rules</h2><p id="rulesUpdatedAt"></p></div><div id="ruleSections"></div></section>
       <section id="equipment" class="module" hidden><div class="module-title"><h2>Lab Equipment</h2><p id="equipmentUpdatedAt"></p></div><div class="panel equipment-tools"><input id="equipmentSearch" type="search" placeholder="搜索设备、型号、位置或负责人" /><select id="equipmentStatus"><option value="">全部状态</option><option>正常</option><option>借出</option><option>维修</option><option>停用</option><option>遗失待查</option></select></div><div class="panel table-wrap"><table><thead><tr><th>序号</th><th>仪器设备</th><th>具体型号</th><th>数量</th><th>位置</th><th>现负责人</th><th>状态</th><th>备注</th></tr></thead><tbody id="equipmentRows"></tbody></table><p id="equipmentEmpty" class="empty" hidden>没有符合条件的设备。</p></div></section>
-      <section id="soa-dashboard" class="module" hidden><div class="module-title"><h2>SOA Dashboard</h2><p id="soaUpdatedAt"></p></div><iframe id="soaViewer" title="SOA 样机物料看板"></iframe></section>
     </section>
   </main>
   <script src="app.js"></script>

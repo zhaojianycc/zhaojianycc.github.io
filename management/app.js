@@ -3,13 +3,12 @@
 
   var $ = function (id) { return document.getElementById(id); };
   var payloads = {};
-  var modules = ["student-tasks", "student-info", "lab-rules", "equipment", "soa-dashboard"];
+  var modules = ["student-tasks", "student-info", "lab-rules", "equipment"];
   var sources = {
     "student-tasks": { file: "../student-board/board.enc.json", label: "Student Tasks" },
     "student-info": { file: "../student-info/info.enc.json", label: "Student Info" },
     "lab-rules": { file: "../lab-rules/rules.enc.json", label: "Lab Rules" },
-    equipment: { file: "../equipment-board/equipment.enc.json", label: "Lab Equipment" },
-    "soa-dashboard": { file: "../SOA-dashboard/dashboard.enc.json", label: "SOA Dashboard", html: true }
+    equipment: { file: "../equipment-board/equipment.enc.json", label: "Lab Equipment" }
   };
 
   function escapeHtml(value) {
@@ -43,7 +42,11 @@
     $("tasksUpdatedAt").textContent = dateLabel(data.publishedAt, "同步时间未记录");
     $("taskGroups").innerHTML = (data.groups || []).map(function (group) {
       return '<section class="group panel"><h3>' + escapeHtml(group.name) + '</h3>' + (group.students || []).map(function (student) {
-        return '<article class="task"><strong>' + escapeHtml(student.displayName) + '</strong><div>' + escapeHtml(student.latestTask || "暂无当前任务") + '</div><time>组会：' + escapeHtml(student.meetingDate || "未记录") + '</time></article>';
+        var history = student.history || [];
+        var historyMarkup = history.length ? '<details class="history"><summary>历史任务（' + history.length + '）</summary><div class="history-list">' + history.map(function (item, index) {
+          return '<article class="history-item"><div><strong>历史任务 ' + (history.length - index) + '</strong><time>组会：' + escapeHtml(item.meetingDate || "未记录") + '</time><time>发布：' + escapeHtml(dateLabel(item.publishedAt, "未记录").replace("更新时间：", "")) + '</time></div><p>' + escapeHtml(item.task || "暂无任务内容") + '</p></article>';
+        }).join("") + '</div></details>' : '<div class="history-empty">暂无更早的历史任务</div>';
+        return '<article class="student-task"><div class="task"><strong>' + escapeHtml(student.displayName) + '</strong><div>' + escapeHtml(student.latestTask || "暂无当前任务") + '</div><time>组会：' + escapeHtml(student.meetingDate || "未记录") + '</time></div>' + historyMarkup + '</article>';
       }).join("") + '</section>';
     }).join("") || '<section class="panel empty-panel">暂无学生任务数据。</section>';
   }
@@ -80,11 +83,6 @@
     renderEquipmentRows();
   }
 
-  function renderSOA(data) {
-    $("soaUpdatedAt").textContent = dateLabel(data.publishedAt);
-    $("soaViewer").srcdoc = data.html;
-  }
-
   function selectModule(module) {
     var selected = modules.indexOf(module) === -1 ? "student-tasks" : module;
     modules.forEach(function (id) {
@@ -99,7 +97,6 @@
     renderInfo(payloads["student-info"]);
     renderRules(payloads["lab-rules"]);
     renderEquipment(payloads.equipment);
-    renderSOA(payloads["soa-dashboard"]);
     $("updatedAt").textContent = "已在当前浏览器中解锁全部 Management 信息";
     $("unlock").hidden = true;
     $("workspace").hidden = false;
@@ -114,7 +111,6 @@
     $("studentRows").replaceChildren();
     $("ruleSections").replaceChildren();
     $("equipmentRows").replaceChildren();
-    $("soaViewer").srcdoc = "";
     $("loadNotice").hidden = true;
     $("password").focus();
   }
@@ -122,7 +118,7 @@
   $("unlockForm").addEventListener("submit", async function (event) {
     event.preventDefault();
     var password = $("password").value;
-    $("message").textContent = "正在本地解密五个模块…";
+    $("message").textContent = "正在本地解密四个模块…";
     var results = await Promise.allSettled(modules.map(function (module) { return decryptFile(sources[module], password); }));
     password = "";
     $("password").value = "";
