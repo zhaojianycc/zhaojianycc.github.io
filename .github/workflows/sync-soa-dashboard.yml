@@ -1,0 +1,67 @@
+name: Sync SOA dashboard
+
+on:
+  schedule:
+    - cron: '3-59/10 * * * *'
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - '.github/workflows/sync-soa-dashboard.yml'
+      - 'scripts/soa-dashboard/**'
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: sync-soa-dashboard
+  cancel-in-progress: false
+
+jobs:
+  synchronize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: master
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Test the publisher using isolated synthetic records
+        run: node --test scripts/soa-dashboard/sync.test.cjs
+      - name: Fetch, verify and encrypt the authoritative record
+        env:
+          MEMS_SOURCE_TOKEN: ${{ secrets.MEMS_SOURCE_TOKEN }}
+          SOA_KEY_CONFIG: ${{ secrets.SOA_KEY_CONFIG }}
+        run: node scripts/soa-dashboard/sync.cjs
+      - name: Commit only encrypted output and source fingerprint
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- SOA-dashboard/dashboard.enc.json SOA-dashboard/source-state.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Automatically sync encrypted SOA dashboard'
+            for attempt in 1 2 3; do
+              git pull --rebase origin master
+              if git push origin HEAD:master; then
+                break
+              fi
+              if [ "$attempt" -eq 3 ]; then exit 1; fi
+              sleep 2
+            done
+          fi
+      - name: Ensure GitHub Pages builds the synchronized commit
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          current=$(git rev-parse HEAD)
+          built=$(gh api "repos/$GITHUB_REPOSITORY/pages/builds/latest" --jq '.commit' 2>/dev/null || true)
+          if [ "$built" != "$current" ]; then
+            gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds" --silent
+          fi

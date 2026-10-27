@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MEMS样机（SOA）物料看板</title>
+  <style>
+    /* ===== 基础样式 ===== */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: "Microsoft YaHei", "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+      background: #f0f2f5;
+      color: #303133;
+      font-size: 14px;
+    }
+    /* ===== 顶部 ===== */
+    header {
+      background: linear-gradient(135deg, #1f3a5f, #2c5f8a);
+      color: #fff;
+      padding: 20px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    header h1 { font-size: 22px; font-weight: 600; letter-spacing: 1px; }
+    header .meta { font-size: 13px; opacity: 0.9; }
+    /* ===== 主体 ===== */
+    main { max-width: 1280px; margin: 24px auto; padding: 0 24px; }
+    /* 概览卡片 */
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-bottom: 24px; }
+    .card {
+      background: #fff; border-radius: 10px; padding: 18px 20px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+      border-top: 4px solid #409eff;
+    }
+    .card .num { font-size: 34px; font-weight: 700; line-height: 1.2; color: #303133; }
+    .card .lbl { font-size: 13px; color: #909399; margin-top: 6px; }
+    .card.c-green { border-top-color: #67c23a; }
+    .card.c-orange { border-top-color: #e6a23c; }
+    .card.c-red { border-top-color: #f56c6c; }
+    /* 数据面板 */
+    .panel {
+      background: #fff; border-radius: 10px; padding: 20px 24px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06); margin-bottom: 24px;
+    }
+    .panel h2 { font-size: 17px; margin-bottom: 14px; padding-bottom: 10px; border-bottom: 1px solid #ebeef5; color: #1f3a5f; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid #ebeef5; white-space: nowrap; }
+    th { background: #f5f7fa; color: #606266; font-weight: 600; }
+    tbody tr:hover { background: #f5f7fa; }
+    /* 状态指示灯 */
+    .light { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; vertical-align: 1px; }
+    .light.ok { background: #0f9d58; box-shadow: 0 0 0 3px rgba(15, 157, 88, .15); }
+    .light.warn { background: #d9822b; box-shadow: 0 0 0 3px rgba(217, 130, 43, .15); }
+    .light.low { background: #d93025; box-shadow: 0 0 0 3px rgba(217, 48, 37, .15); }
+    /* 样机状态徽章 */
+    .badge {
+      display: inline-flex; align-items: center; gap: 5px;
+      padding: 1px 8px; border-radius: 4px;
+      font-size: 12px; font-weight: 500; line-height: 1.7; white-space: nowrap;
+    }
+    .badge::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: currentColor; }
+    .b-in { background: #e7f7ef; color: #0f9d58; }
+    .b-out { background: #e8f0fe; color: #1a56db; }
+    .b-repair { background: #fdf3e3; color: #d9822b; }
+    .b-scrap { background: #f2f4f7; color: #64748b; }
+    /* 底部 */
+    footer { text-align: center; color: #c0c4cc; padding: 18px; font-size: 12px; }
+    /* ===== 打印样式 ===== */
+    @media print {
+      body { background: #fff; }
+      header { background: #1f3a5f; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .card, .panel { box-shadow: none; border: 1px solid #dcdfe6; break-inside: avoid; }
+      .light, .badge { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      th { background: #f5f7fa !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    }
+    @media (max-width: 768px) {
+      th, td { white-space: normal; }
+      header h1 { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MEMS加速度计样机（SOA）物料看板</h1>
+    <div class="meta">数据更新时间：<span id="dataTime">--</span></div>
+  </header>
+
+  <main>
+    <!-- 概览卡片（由数据脚本填充） -->
+    <section class="cards" id="overviewCards"></section>
+
+    <!-- 各型号齐套分析 -->
+    <section class="panel">
+      <h2>各型号齐套分析</h2>
+      <div style="overflow-x:auto;">
+        <table>
+          <thead>
+            <tr>
+              <th>型号</th><th>可生产台数</th><th>关键物料数</th><th>缺料物料数</th><th>状态</th>
+            </tr>
+          </thead>
+          <tbody id="analysisBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 库存总览 -->
+    <section class="panel">
+      <h2>库存总览</h2>
+      <div style="overflow-x:auto;">
+        <table>
+          <thead>
+            <tr>
+              <th>物料编号</th><th>物料名称</th><th>版本</th>
+              <th>存放位置</th><th>当前库存</th><th>单位</th><th>状态</th>
+            </tr>
+          </thead>
+          <tbody id="inventoryBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 表头台账 -->
+    <section class="panel">
+      <h2>表头台账</h2>
+      <div style="overflow-x:auto;">
+        <table>
+          <thead>
+            <tr>
+              <th>表头ID</th><th>所属芯片</th><th>负责人</th><th>位置</th>
+              <th>状态</th><th>备注</th><th>更新时间</th>
+            </tr>
+          </thead>
+          <tbody id="headsBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 样机去向 -->
+    <section class="panel">
+      <h2>样机去向</h2>
+      <div style="overflow-x:auto;">
+        <table>
+          <thead>
+            <tr>
+              <th>序列号</th><th>型号</th><th>状态</th><th>去向</th><th>生产日期</th><th>最后更新</th>
+            </tr>
+          </thead>
+          <tbody id="prototypeBody"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer>仅供团队内部使用 · MEMS小型化样机物料管理系统</footer>
+
+  <!-- 看板数据（由管理后台生成时注入，纯静态，无任何外部依赖） -->
+  <script id="dashboardData" type="application/json">{{DASHBOARD_DATA}}</script>
+  <script>
+    (function () {
+      // ===== 数据解析 =====
+      var el = document.getElementById('dashboardData');
+      if (!el) return;
+      var data = JSON.parse(el.textContent);
+      if (!data || !data.analysis) return;
+
+      // ===== 顶部数据更新时间 =====
+      var timeEl = document.getElementById('dataTime');
+      if (timeEl) {
+        timeEl.textContent = new Date(data.generatedAt).toLocaleString('zh-CN');
+      }
+
+      // ===== 概览卡片 =====
+      var cards = [
+        { label: '物料总种类数', value: data.analysis.totalMaterials, cls: 'c-green' },
+        { label: '可生产台数（各型号）', value: '', cls: 'c-orange' },
+        { label: '已生产样机总数', value: data.analysis.totalPrototypes, cls: 'c-green' },
+        { label: '表头总数', value: data.analysis.totalHeads || 0, cls: 'c-green' },
+        { label: '库存不足物料数（<5）', value: data.analysis.lowStockCount, cls: 'c-red' }
+      ];
+      var models = data.analysis.models || [];
+      cards[1].value = models.map(function (m) { return m.model + ' ' + m.maxUnits + '台'; }).join(' / ') || '-';
+      var cardsHtml = '';
+      for (var i = 0; i < cards.length; i++) {
+        cardsHtml += '<div class="card ' + cards[i].cls + '">' +
+          '<div class="num" style="font-size:24px;">' + cards[i].value + '</div>' +
+          '<div class="lbl">' + cards[i].label + '</div></div>';
+      }
+      document.getElementById('overviewCards').innerHTML = cardsHtml;
+
+      // ===== 各型号齐套分析表 =====
+      var anRows = '';
+      for (var x = 0; x < models.length; x++) {
+        var m2 = models[x];
+        var canProduce = m2.maxUnits > 0;
+        anRows += '<tr>' +
+          '<td><strong>' + m2.model + '</strong></td>' +
+          '<td>' + m2.maxUnits + '</td>' +
+          '<td>' + m2.criticalCount + '</td>' +
+          '<td>' + m2.shortageCount + '</td>' +
+          '<td><span class="badge ' + (canProduce ? 'b-in' : 'b-out') + '">' + (canProduce ? '可生产' : '缺料') + '</span></td>' +
+          '</tr>';
+      }
+      document.getElementById('analysisBody').innerHTML = anRows;
+
+      // ===== 库存总览表 =====
+      var invRows = '';
+      for (var j = 0; j < data.materials.length; j++) {
+        var m = data.materials[j];
+        var status = m.stock_quantity > 10 ? 'ok' : (m.stock_quantity >= 5 ? 'warn' : 'low');
+        var statusText = m.stock_quantity > 10 ? '充足' : (m.stock_quantity >= 5 ? '正常' : '缺料');
+        invRows += '<tr>' +
+          '<td>' + m.code + '</td>' +
+          '<td>' + m.name + '</td>' +
+          '<td>' + (m.version || '-') + '</td>' +
+          '<td>' + (m.bin || m.location || '-') + '</td>' +
+          '<td>' + m.stock_quantity + '</td>' +
+          '<td>' + (m.unit || '-') + '</td>' +
+          '<td><span class="light ' + status + '"></span>' + statusText + '</td>' +
+          '</tr>';
+      }
+      document.getElementById('inventoryBody').innerHTML = invRows;
+
+      // ===== 表头台账 =====
+      var escText = function (value) {
+        return String(value == null ? '' : value).replace(/[&<>"']/g, function (c) {
+          return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+        });
+      };
+      var heads = data.heads || [];
+      var headRows = '';
+      for (var h = 0; h < heads.length; h++) {
+        var head = heads[h];
+        var headStatusClass = head.status === '正常' ? 'b-in' : (head.status === '异常' ? 'b-repair' : 'b-scrap');
+        headRows += '<tr>' +
+          '<td><strong>' + escText(head.head_id) + '</strong></td>' +
+          '<td>' + escText(head.chip || '-') + '</td>' +
+          '<td>' + escText(head.owner || '-') + '</td>' +
+          '<td>' + escText(head.location || '-') + '</td>' +
+          '<td><span class="badge ' + headStatusClass + '">' + escText(head.status || '-') + '</span></td>' +
+          '<td>' + escText(head.remark || '-') + '</td>' +
+          '<td>' + (head.updated_at ? new Date(head.updated_at).toLocaleString('zh-CN', { hour12: false }) : '-') + '</td>' +
+          '</tr>';
+      }
+      document.getElementById('headsBody').innerHTML = headRows || '<tr><td colspan="7">暂无表头数据</td></tr>';
+
+      // ===== 样机去向表 =====
+      var statusClassMap = { '在库': 'b-in', '借出': 'b-out', '维修': 'b-repair', '报废': 'b-scrap' };
+      var protoRows = '';
+      for (var k = 0; k < data.prototypes.length; k++) {
+        var p = data.prototypes[k];
+        var sCls = statusClassMap[p.status] || 'b-in';
+        protoRows += '<tr>' +
+          '<td><strong>' + p.serial_number + '</strong></td>' +
+          '<td>' + p.model + '</td>' +
+          '<td><span class="badge ' + sCls + '">' + p.status + '</span></td>' +
+          '<td>' + (p.destination || '-') + '</td>' +
+          '<td>' + (p.built_date || '-') + '</td>' +
+          '<td>' + (p.updated_at ? new Date(p.updated_at).toLocaleString('zh-CN') : '-') + '</td>' +
+          '</tr>';
+      }
+      document.getElementById('prototypeBody').innerHTML = protoRows;
+    })();
+  </script>
+</body>
+</html>

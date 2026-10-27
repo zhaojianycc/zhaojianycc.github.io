@@ -5,3 +5,31 @@
 - `password-check.enc.json` contains only an encrypted fixed marker used to verify that publishers entered the shared password correctly.
 - The shared password is the same as `student-board`; it is never stored in this repository.
 - Routine publication updates only `dashboard.enc.json` through the GitHub Contents API.
+
+## Automatic publication
+
+The `Sync SOA dashboard` GitHub Actions workflow checks the private repository
+`zzzbm/mems-dashboard`, branch `main`, record `data/workspaces/zbm_dashboard.sqlite`
+approximately every ten minutes. GitHub scheduling and Pages deployment can add delay.
+It can also be started manually from the Actions tab.
+
+Only a changed source record or publisher causes a new encrypted payload. No plaintext
+database or decrypted HTML is committed. `source-state.json` stores non-secret source
+and output fingerprints for change detection. The publisher uses its own reviewed
+template; it does not execute code from the data-source repository.
+
+Repository Actions secrets:
+
+- `MEMS_SOURCE_TOKEN`: a GitHub credential that can read the private source repository.
+- `SOA_KEY_CONFIG`: JSON containing the existing password-derived `key` and `salt`.
+  This is sensitive key material. It must never be committed, logged, or published.
+
+The shared password and password-check marker remain unchanged. If the key no longer
+matches the marker, synchronization fails before overwriting the published dashboard.
+On token expiry, renew `MEMS_SOURCE_TOKEN` and rerun the workflow; the previous encrypted
+page remains available. GitHub may disable scheduled workflows in public repositories
+after 60 days without repository activity; check the workflow status after long inactivity.
+
+The workflow explicitly requests a Pages build, because commits made using its
+`GITHUB_TOKEN` do not trigger branch-based Pages builds automatically. The site's
+existing `master`/root publishing configuration is preserved.
